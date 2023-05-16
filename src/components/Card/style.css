@@ -1,0 +1,50 @@
+.card {
+
+  width: 35%;
+  border: 2px solid #edecec;
+  padding: 4rem 1rem;
+  cursor: default;
+}
+
+.card:hover {
+  transition: .5s;
+  background-color: #feb633;
+}
+
+.card h3 {
+  color: #32333c;
+  font-size: 1.4rem;
+  margin: .2rem 0;
+}
+
+.card p {
+  color: #8a8fa3;
+
+}
+
+.card p:nth-of-type(2) {
+  margin-bottom: 1.5rem;
+}
+
+/* darkMode */
+
+.darkMode .card {
+  border-color: #ffffff0d;
+}
+
+.darkMode .card p {
+  color: #9f9f9f;
+}
+
+.darkMode .card h3 {
+  color: #fff;
+}
+
+
+/* media */
+
+@media (max-width: 620px) {
+  .card {
+    width: 100%;
+  }
+}

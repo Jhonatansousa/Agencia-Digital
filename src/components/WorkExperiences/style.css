@@ -1,0 +1,64 @@
+.workExperiencesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem 2rem 6rem 2rem;
+  background-color: #f6f8fc;
+}
+
+.workText {
+  max-width: 50rem;
+}
+
+.workText h1 {
+  font-size: 2.4rem;
+  color: #32333c;
+  margin: 3rem auto;
+  position: relative;
+  text-align: center;
+}
+
+.workText h1:before {
+  content: '';
+  width: 5.5rem;
+  height: 3px;
+  border-radius: 25px;
+  position: absolute;
+  background-color: #feb633;
+  bottom: -1.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.workText p {
+  color: #818fa3;
+  margin: 0 2.5rem 2rem 2.5rem;
+  text-align: justify;
+}
+
+.cards {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* darkmode */
+
+.darkMode .workExperiencesSection {
+  background-color: #393838;
+}
+
+.darkMode .workText h1,
+.darkMode .workText p {
+  color: #cccccc;
+}
+
+
+
+@media (max-width: 620px) {
+  .cards {
+    display: block;
+  }
+}
